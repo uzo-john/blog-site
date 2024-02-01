@@ -7,12 +7,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 10px 20px;
     height: 58.539px;
     flex-shrink: 0;
     position: relative;
+    margin-bottom: 2em;
 }
+/* Navigation styling */
 .logo img{
     width: 35px;
     height: 35px;
@@ -22,18 +23,88 @@ header{
     position: absolute;
     left:12em;
     top: 1.3em;
-    
-
 }
 .navbar-text{
     color: #fff;
-    font-size: 1.372rem;
+    font-style: normal;
+    font-size: 21.952px;
+    font-weight: 700;
     line-height: normal;
     position: absolute;
     left: 10.5em;
 }
 .span-text{
-    
-    font-weight: 700;
+    font-weight: lighter;
+}
+nav{
+    justify-content: flex-end;
+    position: absolute;
+    right: 32em;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 0 13px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: normal;
+    transition: 0.3s ease-in-out;
+}
+nav a:hover{
+    color: var(--Secondary, #F9995D);
+}
+.nav-search input{
+    width: 15em;
+    margin: 0 12rem;
+    height: 1.5rem;
+    border-radius: 6%;
+    border: 1px solid var(--Neutral-100,#242535 );
+    background: #242535;
+    /* position: absolute;
+    top: 2em;
+    right: 0.2em; */
+    color: #fff;
+}
+.nav-search ::placeholder{
+    color: #A1A1AA;
+    padding-left: 1em;
+}
+.container-fluid{
+    width: 70%;
+    height: 70vh;
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.8em;
+    position: relative;
+    left: 13em;
+}
+.fluid-card{
+    background-color: #141624;
+    color: #fff;
+    width: 29.4em;
+    height:14em ;
+    border-radius: 0.9em;
+    position: absolute;
+    z-index: 1;
+    bottom: -2.5em ;
+    left: 3em;
+    border: 1px solid var(--Neutral-100,#242535 );
+}
+.card-reason{
+    background-color: #4B6BFB;
+    width: fit-content;
+    border-radius: 0.3em;
+    padding: 0.4em 1em;
+    margin:2em 0 0 2em ;
+}
+.card-text{
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-left: 1.3em;
+    margin-top: 0.7em;
+
 }
 
