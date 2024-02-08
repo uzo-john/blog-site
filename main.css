@@ -182,19 +182,8 @@ body {
 
 .content .card-container{
     position: absolute;
-    top: 7em;
-    left: 10em;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* width: calc(50% - 3em); */
-    /* height: 150vh; */
-    /* width: calc(28.33% - 2em); */
-    /* text-align: center; */
-    /* align-items: center; */
-    /* padding-top: 30px; */
-    /* flex-shrink: 0; */
-    /* margin-top: 0; */
-
+    top: 12em;
+    left: 1em;
     flex-shrink: 0;
     display: flex;
     flex-wrap: wrap;
@@ -203,29 +192,75 @@ body {
     max-width: 100%;
     height: 70vh;
     padding-top: 0;
-    gap: 1rem;
+    gap: 0.8rem;
     margin-bottom: 5em;
     padding-bottom: 53px;
 }
 .content-card{
     background-color: #141624;
     color: #fff;
-    width: 15em;
-    height: 20em;
+    /* width: 15em; */
+    height: 30em;
     border-radius: 0.9em;
-    width: calc(33.33% - 2em); 
-    /* text-align: center; */
-    /* align-items: center; */
-    /* padding-top: 30px; */
+    width: calc(33% - 5em); 
     flex-shrink: 0;
-    /* margin-top: 0;  */
     border: 1px solid var(--Neutral-100, #242535);
+}
+.card-container .card-header{
+    position: absolute;
+    top: -2.5em;
+    left: 4.8em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .content .card-container .content-card > .card-img{
-    width: 100px;
-    height: 150px;
+    width: 330px;
+    height: 250px;
+    margin: 0.9em; 
+    margin-left: 0.9em;
+    border-radius: 0.5em;
 }
+.content .card-container .content-card .card-text1{
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-left: 1.5em;
+    margin-top: 0.7em;
+}
+.content .card-container .content-card .card-reason1 {
+    background-color: #4B6BFB0D;
+    width: fit-content;
+    border-radius: 0.3em;
+    padding: 0.4em 1em;
+    margin-top: 0.5em;
+    margin-left: 1.7em;
+    color: #4B6BFB;
+}
+.content .card-container .content-card .person-tag1 img {
+    width: 4%;
+    border-radius: 100%;
+    margin-top: 1em;
+    margin-left: 1.7em;
+}
+.content .card-container .content-card .person-tag1 {
+    display: flex;
+    position: absolute;
+    /* bottom: -1.6em; */
+    /* left: 5em; */
+    align-items: center;
+}
+
+.content .card-container .content-card .person-tag1 p {
+    margin: 0.8em;
+    margin-top: 2.2em;
+    color: #A1A1AA;
+}
+    
+
+
+
 
 
 /* Media query for screens with a maximum width of 768px */
