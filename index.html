@@ -8,29 +8,34 @@
     <script src="https://use.fontawesome.com/releases/v6.5.1/js/all.js"></script> 
 </head>
 <body>
-    <header>
-        <div class="logo">
+    <div class="navbar">
+        <div class="navbar-header">
+          <button class="navbar-toggler" onclick="toggleNavbar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <div class="logo">
             <img src="images/logo.png" alt="logo-1">
-        </div>
-        <div class="navbar-text">
+          </div>
+          <div class="navbar-text">
             <span class="span-text">Meta</span>Blog
-
+          </div>
         </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#blog">Blog</a>
-            <a href="#single post">Single post</a>
-            <a href="#pages">Pages</a>
-            <a href="#contact">Contact</a>
-        </nav> 
+        <div class="navbar-links" id="navbarLinks">
+          <a href="#home">Home</a>
+          <a href="#blog">Blog</a>
+          <a href="#single post">Single post</a>
+          <a href="#pages">pages</a>
+          <a href="#contact"></a>
+        </div>
         <div class="nav-search">
             <input type="text" id="reason" name="reason" placeholder="Search" required>
             <div class="icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            
+            </div>    
         </div>
-    </header>
+    </div>
     <!-- hero-section -->
     <div class="container-fluid">
         <div class="fluid-card">
@@ -45,10 +50,92 @@
             <img src="images/logo-1.jpeg" alt="tag">
             <p>Jason Francisco</p>
             <p>August 20, 2022</p>
-
         </div>
     </div>
+<!-- content section -->
+    <section class="content">
+        <div class="content-box">
+            <p>Advertisement</p>
+            <p class="box-p">You can place ads</p>
+            <p>750x100</p>
+        </div>
+        
+        <div class="card-container">
+            <div class="content-card">
+                <img class="card-img" src="./images/img-01.jpeg" alt="A beatiful beach image">
+                <!-- <div class="person-tag">
+                    <img src="images/logo-1.jpeg" alt="tag">
+                    <p>Jason Francisco</p>
+                    <p>August 20, 2022</p>
+                </div> -->
+            </div>
+            <div class="content-card">
+                <img class="card-img" src="./images/img-02.jpeg" alt="An image of a city at the river line ">
+                <!-- <div class="person-tag">
+                    <img src="images/logo-1.jpeg" alt="tag">
+                    <p>Jason Francisco</p>
+                    <p>August 20, 2022</p>
+                </div> -->
+            </div>
+            <div class="content-card">
+                <img class="card-img" src="./images/img-03.jpeg" alt="An image of a young beautiful lady in fron of a story building">
+                <!-- <div class="person-tag">
+                    <img src="images/logo-1.jpeg" alt="tag">
+                    <p>Jason Francisco</p>
+                    <p>August 20, 2022</p>
+                </div> -->
+            </div>
+            <div class="content-card">
+                <img class="card-img" src="./images/img-04.jpeg" alt="A beautiful isolated building by the forest">
+                <!-- <div class="person-tag">
+                    <img src="images/logo-1.jpeg" alt="tag">
+                    <p>Jason Francisco</p>
+                    <p>August 20, 2022</p>
+                </div> -->
+            </div>
+            <div class="content-card">
+                <img class="card-img" src="./images/img-05.jpeg" alt="Images of Rocks and the beautiful sky">
+                <!-- <div class="person-tag">
+                    <img src="images/logo-1.jpeg" alt="tag">
+                    <p>Jason Francisco</p>
+                    <p>August 20, 2022</p>
+                </div> -->
+            </div>
+            <div class="content-card">
+                <img class="card-img" src="./images/img-06.jpeg" alt="An image of a beautiful car">
+                <!-- <div class="person-tag">
+                    <img src="images/logo-1.jpeg" alt="tag">
+                    <p>Jason Francisco</p>
+                    <p>August 20, 2022</p>
+                </div> -->
+            </div>
+            <div class="content-card">
+                <img class="card-img" src="./images/img-07.jpeg" alt="An image of gardets including camera and airpod">
+                <!-- <div class="person-tag">
+                    <img src="images/logo-1.jpeg" alt="tag">
+                    <p>Jason Francisco</p>
+                    <p>August 20, 2022</p>
+                </div> -->
+            </div>
+            <div class="content-card">
+                <img class="card-img" src="./images/img-08.jpeg" alt="A beatiful isolated beach with cocoa nut trees">
+                <!-- <div class="person-tag">
+                    <img src="images/logo-1.jpeg" alt="tag">
+                    <p>Jason Francisco</p>
+                    <p>August 20, 2022</p>
+                </div> -->
+            </div>
+            <div class="content-card">
+                <img class="card-img" src="./images/img-09.jpeg" alt="Images of gardgets">
+                <!-- <div class="person-tag">
+                    <img src="images/logo-1.jpeg" alt="tag">
+                    <p>Jason Francisco</p>
+                    <p>August 20, 2022</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
 
-    
+<script src="index.js"></script> 
 </body>
 </html>
