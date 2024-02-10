@@ -431,6 +431,20 @@ body {
     left: 13em;
     top: 1.3em;
 }
+.footer .footer-at{
+    color: #97989F;
+    font-style: normal;
+    font-size: 15px;
+    /* font-weight: 700; */
+    line-height: normal;
+    position: absolute;
+    left: 17.3em;
+    top: 3.5em;
+    width: 25em;
+}
+.footer .footer-at span{
+    color: #fff;
+}
 
 .footer .botton h4{
     font-weight: bold;
