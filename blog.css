@@ -1,0 +1,532 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #141624;
+}
+header {
+    display: flex;
+    color: white;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 58.539px;
+    flex-shrink: 0;
+    position: relative;
+    margin-bottom: 2em;
+    top: 0; /* Updated */
+    left: 0; /* Updated */
+    z-index: 100; /* Updated */
+    /* background: rgba(33, 54, 33, 0.333); */
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    float: left;
+    border-radius: 50%;
+    position: absolute;
+    left: 13em;
+    top: 1.3em;
+}
+.navbar-text {
+    color: #fff;
+    font-style: normal;
+    font-size: 21.952px;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    left: 11.5em;
+    margin-left: 0;
+    /* top: 1.2em; */
+}
+.span-text {
+    font-weight: lighter;
+} 
+.navbar{
+    justify-content: flex-end;
+    position: absolute;
+    right: 32em;   
+}
+  
+.navbar a {
+    text-decoration: none;
+    margin: 0 13px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: normal;
+    transition: 0.3s ease-in-out;
+}
+.navbar > a:hover {
+    color: var(--Secondary, #F9995D);
+}
+.nav-search {
+    position: relative;
+}
+
+.nav-search .icon {
+    position: absolute;
+    right: 34%;
+    top: 30%;
+    color: #A1A1AA;
+}
+
+.nav-search input {
+    width: 15em;
+    margin: 0 12rem;
+    height: 1.5rem;
+    border-radius: 6%;
+    border: 1px solid var(--Neutral-100, #242535);
+    background: #242535;
+    color: #fff;
+}
+
+.nav-search ::placeholder {
+    color: #A1A1AA;
+    padding-left: 1em;
+}
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    margin-top: 4%;
+    margin-right: 5%;
+    right: 3%;
+}
+
+.container-fluid-blog{
+    width: 70%;
+    height: 70vh;
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.8em;
+    position: relative;
+    left: 13em;
+    margin-bottom: em;
+
+}
+
+.fluid-card-blog{
+    color: #fff;
+    width: 29.4em;
+    height: 15em;
+    position: absolute;
+    top: 11em;
+    left: 3em;
+}
+.card-reason {
+    background-color: #4B6BFB;
+    width: fit-content;
+    border-radius: 0.3em;
+    padding: 0.4em 1em;
+    margin: 2em 0 0 2em;
+}
+.card-text {
+    font-weight: bold;
+    font-size: 1.8em;
+    line-height: 1em;
+    margin-left: 1.3em;
+    margin-top: 0.7em;
+}
+
+
+.person-tag-blog{
+    display: flex;
+    position: absolute;
+    bottom: 0.5em;
+    left: 5em;
+    align-items: center;
+
+}
+
+.person-tag-blog img{
+    width: 5%;
+    border-radius: 100%;
+}
+
+.person-tag-blog p{
+    margin: 0.8em;
+    color: #A1A1AA;
+}
+.content{
+    height: 250vh;
+    position: relative;
+    background-color: #141624;
+    margin-bottom: 3em;
+}
+.content .content-box{
+    background-color: #242535;
+    width: 40%;
+    position: absolute;
+    left: 25em;
+    text-align: center;
+    color: #696A75;
+    border-radius: 0.9em;
+    height: 5em;
+    padding-top: 0.5em;
+}
+.content-box p{
+    margin: 0.4em;
+}
+.content-box .box-p{
+    font-weight: bold;
+
+}
+
+/* .content .card-container{
+    position: absolute;
+    top: 12em;
+    left: 1em;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 70vh;
+    padding-top: 0;
+    gap: 0.8rem;
+    margin-bottom: 20em;
+    padding-bottom: 53px;
+} */
+.content-card{
+    background-color: #141624;
+    color: #fff;
+    height: 30em;
+    border-radius: 0.9em;
+    width: calc(33% - 5em); 
+    flex-shrink: 0;
+    border: 1px solid var(--Neutral-100, #242535);
+}
+.view-post{
+    width: 10%;
+    position: absolute;
+    bottom: -15em;
+    left: 47%;
+    text-align: center;
+    background-color: #141624;
+    color: #696A75;
+    border-radius: 0.3em;
+    border: 1px solid var(--Neutral-100, #242535);
+
+}
+
+.content-box1{
+    background-color: #242535;
+    width: 45%;
+    position: absolute;
+    bottom: -23em;
+    left: 25em;
+    text-align: center;
+    color: #696A75;
+    border-radius: 0.9em;
+    height: 4.5em;
+    padding-top: 0.5em;
+}
+.content-box1 p{
+    margin: 0.3em;
+}
+.content-box1 .box-p1{
+    font-weight: bold;
+
+}
+.footer{
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 75vh;
+    position: relative;
+    bottom: -25em;
+    background-color:#181A2A;
+    border-top:1px solid #242535;
+
+}
+.footer .footer-abt{
+    color: #fff;
+    height: 19em;
+    width: calc(29% - 5em); 
+    flex-shrink: 0;
+}
+.footer .footer-abt a{
+    display: flex;
+    text-decoration: none;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: normal; 
+}
+.footer .footer-abt .abt{
+    position: absolute;
+    left: 8em;
+    top: 2em;
+    width: 20%;
+}
+.footer .footer-abt .abt h4{
+    font-size: 18px;
+}
+.footer .footer-abt .abt p{
+    color: #97989F;
+    font-size: 16px;
+}
+
+.footer .footer-abt .abt .ads{
+    margin-top: 2.5em;
+}
+.footer .footer-abt .abt .ads span{
+    color: #fff;
+}
+.footer .footer-abt .links{
+    position: absolute;
+    left: 35em;
+    top: 2em;
+}
+.footer .footer-abt .links h4{
+    font-size: 18px;
+}
+.footer .footer-abt .links a{
+    color: #97989F;
+    font-size: 16px;
+}
+
+.footer .footer-abt .cat-abt{
+    position: absolute;
+    right: 35em;
+    top: 2em;
+}
+.footer .footer-abt .cat-abt h4{
+    font-size: 18px;
+}
+.footer .footer-abt .cat-abt p{
+    color: #97989F;
+    font-size: 16px;
+}
+
+.footer .botton{
+    border-radius: 0.4em;
+    border: 1px solid var(--Neutral-100, #242535);
+    background: #242535;
+    height:14em ;
+    width: 18em;
+    text-align: center;
+    position:absolute;
+    right: 6.5em;
+    top: 4em;
+}
+.footer hr{
+    background-color:#242535 ;
+    position: absolute;
+    bottom: 5.5em;
+    width: 83%;
+    left: 8em;
+    border: none;
+    height: 1px;
+}
+.footer .footer-image{
+    position: absolute;
+    margin-top: 17em;
+    left: -5.2em;
+}
+.footer .footer-text{
+    color: #fff;
+    font-style: normal;
+    font-size: 19.952px;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    left: 13em;
+    top: 1.2em;
+}
+.footer .footer-logo img{
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    float: left;
+    border-radius: 50%;
+    position: absolute;
+    left: 13em;
+    top: 1.3em;
+}
+.footer .footer-at{
+    color: #97989F;
+    font-style: normal;
+    font-size: 15px;
+    line-height: normal;
+    position: absolute;
+    left: 17.3em;
+    top: 3.5em;
+    width: 25em;
+}
+.footer .footer-at span{
+    color: #fff;
+}
+
+.footer .botton h4{
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+}
+.footer .botton p{
+    color: #97989F;
+    font-size: 12px;
+}
+.footer .botton input{
+    width: 16em;
+    height: 2.9em;
+    margin-bottom: 0.5em;
+    border-radius: 6%;
+    border: 1px solid var(--Neutral-100, #242535);
+    background: #181A2A;
+    margin-top: 1em;
+}
+.footer .botton button{
+    width: 16em;
+    height: 2.9em;
+    background-color: #4B6BFB;
+    border-radius: 6%;
+    border: 1px solid var(--Neutral-100, #4B6BFB);
+}
+.footer .footer-list ul{
+    display: flex;
+    position: absolute;
+    right: 5em;
+    top: 24em;
+}
+.footer .footer-list li{
+    margin-right: 1em;
+    list-style: none;
+    color:#BABABF;
+}
+.footer .footer-list div{
+    border-left: 2px solid #242535;
+    height: 18px;
+    margin-right: 1em;
+}
+
+
+/* blog styling */
+.container-fluid-blog{
+    width: 70%;
+    height: 70vh;
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.8em;
+    position: relative;
+    left: 13em;
+    margin-bottom: em;
+
+}
+.fluid-card-blog{
+    color: #fff;
+    width: 29.4em;
+    height: 15em;
+    position: absolute;
+    top: 11em;
+    left: 3em;
+}
+.person-tag-blog{
+    display: flex;
+    position: absolute;
+    bottom: 0.5em;
+    left: 5em;
+    align-items: center;
+
+}
+.person-tag-blog img{
+    width: 5%;
+    border-radius: 100%;
+}
+.person-tag-blog p{
+    margin: 0.8em;
+    color: #A1A1AA;
+}
+.content .card-container-blog{
+    position: absolute;
+    top: 6em;
+    left: 1em;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 70vh;
+    padding-top: 0;
+    gap: 0.8rem;
+    margin-bottom: 20em;
+    padding-bottom: 53px;
+}
+.card-container-blog .card-header{
+    position: absolute;
+    top: -2.5em;
+    left: 4.8em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.content .card-container-blog .content-card > .card-img{
+    width: 330px;
+    height: 250px;
+    margin: 0.9em; 
+    margin-left: 0.9em;
+    border-radius: 0.5em;
+}
+.content .card-container-blog .content-card .card-text1{
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-left: 1.5em;
+    margin-top: 0.7em;
+}
+.content .card-container-blog .content-card .card-reason1 {
+    background-color: #4B6BFB0D;
+    width: fit-content;
+    border-radius: 0.3em;
+    padding: 0.4em 1em;
+    margin-top: 0.5em;
+    margin-left: 1.7em;
+    color: #4B6BFB;
+}
+.content .card-container-blog .content-card .person-tag1 img {
+    width: 4%;
+    border-radius: 100%;
+    margin-top: 1em;
+    margin-left: 1.7em;
+}
+.content .card-container-blog .content-card .person-tag1 .tester1{
+    width: 5%;
+}
+.content .card-container-blog .content-card .person-tag1 .tester2{
+    width: 9%;
+}
+.content .card-container-blog .content-card .person-tag1 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+.content .card-container-blog .content-card .person-tag1 p {
+    margin: 0.8em;
+    margin-top: 2.2em;
+    color: #A1A1AA;
+}
