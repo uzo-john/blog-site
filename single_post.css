@@ -241,7 +241,7 @@ header::before {
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    height: 100vh;
+    height: 29em;
     position: relative;
     bottom: -25em;
     background-color:#181A2A;
@@ -401,7 +401,7 @@ header::before {
     display: flex;
     position: absolute;
     right: 5em;
-    top: 22.5em;
+    top: 25.5em;
 }
 .footer .footer-list li{
     margin-right: 1em;
