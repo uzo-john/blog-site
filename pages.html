@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog site</title>
-    <link rel="stylesheet" href="blog.css">
-    <script src="https://use.fontawesome.com/releases/v6.5.1/js/all.js"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha384-eF4eJ67zUUVaRvnb6i6qkzuvU8ZP5c2z31BoLRHR4/MGrLoPeXsT1GZU00dApQb4" crossorigin="anonymous">
     <link>
+    <title>Blog site</title>
+    <link rel="stylesheet" href="pages.css">
+    <script src="https://use.fontawesome.com/releases/v6.5.1/js/all.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
     <header>
@@ -31,7 +30,7 @@
             <a href="./index.html" style="--i:1">Home</a>
             <a href="./blog.html" style="--i:2">Blog</a>
             <a href="./single_post.html" style="--i:3">Single Post</a>
-            <a href="#pages" style="--i:4">Pages</a>
+            <a href="./pages.html" style="--i:4">Pages</a>
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
         <div class="nav-search">
@@ -41,27 +40,25 @@
             </div>
         </div>
     </header>
-    <!-- hero-section -->
-    <div class="container-fluid-blog">
-        <div class="fluid-card-blog">
-            <div class="card-reason">
-                Techonlogy
+    
+    <div class="text_section">
+        <div class="paragraph1">
+            <div class="usericon">
+                <img src="images/logo-2.jpeg" alt="tag">
             </div>
-            <div class="card-text">
-                The Impact of Technology on<br> the Workplace: How<br> Technology is Changing
-            </div>
+            <p class="text1">Jonathan Doe</p>
+            <p class="text2">Collaborator and Editor</p>
         </div>
-        <div class="person-tag-blog">
-            <img src="images/logo-1.jpeg" alt="tag">
-            <p>Jason Francisco</p>
-            <p>August 20, 2022</p>
+        <div class="paragraph2">
+            Meet Jonathan Doe, a passionate writer and blogger with a love for<br>
+            technology and travel. Jonathan holds a degree in Computer Science and <br>
+            has spent years working in the tech industry, gaining a deep understnading <br>
+            of the impact technology has on our lives.
         </div>
     </div>
-<!-- content section -->
-    <section class="content" >
+    <section class="content">
         <!--card-container  -->
-        <div class="card-container-blog">
-            <div class="card-header">Latest Post</div>
+        <div class="card-container">
             <div class="content-card">
                 <img class="card-img" src="./images/img-01.jpeg" alt="A beatiful beach image">
                 <div class="card-reason1">
@@ -190,14 +187,6 @@
                 </div>
             </div>
         </div>
-        <div class="view-post">
-            <p>View All Post</p>
-        </div>
-        <div class="content-box1">
-            <p>Advertisement</p>
-            <p class="box-p1">You can place ads</p>
-            <p>750x100</p>
-        </div>
     </section>
     <!-- footer-section -->
     <footer>
@@ -267,6 +256,5 @@
         </div>
 
     </footer>
-<script src="index.js"></script> 
 </body>
 </html>
